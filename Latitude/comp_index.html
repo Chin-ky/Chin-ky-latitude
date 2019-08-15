@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- BOOTSTRAP: Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-------------------------------------->
+    <!-- Tab Title -->
+    <title>Comparison</title> 
+    
+
+
+    <!-- Bring in our bootstrap stylesheet -->
+    <!-- .min.css makes it machine readable, not human readable, for faster processing: -->
+    <!-------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     
+    
+
+    <!-- Personalized stylesheet (Human readable)-->
+    <!-------------------------------------->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="bootstrap.min.css" media="screen">
+   
+
+</head>
+
+<!-------------------------------------->
+<!-- BODY SECTION -->
+<!-------------------------------------->
+<body>
+    <!-- Using Bootstrap -->
+    <!-------------------------------------->
+    <!-- BOOTSTRAP NAVIGATION BAR -->
+    <!-------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bg-small">
+        <!-- <div class="pull-right"> -->
+        <a class="navbar-brand latitude-nav" href="https://chin-ky.github.io/Chin-ky-latitude">Latitude</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <!-- drop down for Plots Menu: -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="visualization/temp_index.html">Max Temperature</a>
+                    <a class="dropdown-item" href="visualization/humidity_index.html">Humidity</a>
+                    <a class="dropdown-item" href="visualization/cloudy_index.html">Cloudiness</a>
+                    <a class="dropdown-item" href="visualization/wind_index.html">Wind Speed</a>
+                    </div>
+                </li>
+                
+                <!-- navigation link to Data -->
+                <li class="nav-item">
+                    <a class="nav-link" href="data_index.html">Data</a>
+                </li>
+                
+                <!-- navigation link to Comparison -->
+                <li class="nav-item">
+                    <a class="nav-link" href="">Comparison</a>
+                </li>
+                
+            </ul>
+        <!-- </div> -->
+        </div>
+    </nav>
+
+
+
+    <!-------------------------------------->
+    <!-- CREATE BOOTSTRAP GRID FOR THE COMPARISON PAGE -->
+    <!-------------------------------------->
+    <div class="box-set">
+        <figure class="box box-cmp add-scrollbar">
+            <h2>Comparison: Latitude vs X</h2>
+            <hr>
+            <p>Click any plot to get an in-depth analysis.</p>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h4>vs. Max Temperature</h4>
+                        <a href="visualization/temp_index.html"> 
+                            <img class="mx-auto d-block" src="assets/images/CityLatitudeVsTemperature.png" alt="MaxTemp" height="275" width="375">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h4>vs. Humidity</h4>
+                        <a href="visualization/humidity_index.html"> 
+                            <img class="mx-auto d-block" src="assets/images/CityLatitudeVsHumidity.png" alt="MaxTemp" height="275" width="375">
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        </br>
+                        <h4>vs. Cloudiness</h4>
+                        <a href="visualization/cloudy_index.html"> 
+                            <img class="mx-auto d-block" src="assets/images/CityLatitudeVsCloudiness.png" alt="MaxTemp" height="275" width="375">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        </br>
+                        <h4>vs. Wind Speed</h4>
+                        <a href="visualization/wind_index.html"> 
+                            <img class="mx-auto d-block" src="assets/images/CityLatitudeVsWindSpeed.png" alt="MaxTemp" height="275" width="375">
+                        </a>
+                </div>
+            </div>
+
+
+        </figure>
+
+    </div>
+
+
+
+    
+    
+</body>
+
+</html>

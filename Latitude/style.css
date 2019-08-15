@@ -1,0 +1,279 @@
+/**********************************************************************************
+/* STYLES.CSS */
+/**********************************************************************************/
+
+
+
+/*****************************************/
+/* NAV BAR */
+/*****************************************/
+.navbar-brand {
+  background-color: lightseagreen;
+  padding: 10px 10px 10px 10px;
+  z-index: 10;
+}
+
+.navbar-light .navbar-brand {
+  color: white;
+}
+
+.nav-bg-small{
+  background-color: white;
+}
+
+.collapse {
+  z-index: 10;
+  background-color: white;
+}
+
+
+.latitude-nav {
+  /* font-family: auto; */
+  font-weight: bold;
+}
+
+
+
+/*****************************************/
+/* HEADER FORMATTING */
+/*****************************************/
+h2 {
+  /* font-family: auto; */
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+h3 {
+  /* font-family: initial; */
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+h4 {
+  /* font-family: initial; */
+  color: lightseagreen;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/*****************************************
+- FOR THE COMPARISON AND DATA PAGES:
+*****************************************/
+.add-scrollbar {
+  height: 150vh;
+  overflow-y: scroll;
+}
+
+
+
+/*****************************************/
+/* BODY */
+/*****************************************/
+body {
+  background-color: lightgray;
+}
+
+
+/**********************************************************************************
+/**********************************************************************************
+/* BOX CONFIG */
+/**********************************************************************************
+/**********************************************************************************/
+
+/*****************************************
+ BOX SET - FOR ALL PAGES
+*****************************************/
+.box-set {
+  position: relative;
+}
+
+.box {
+  position: fixed;
+}
+
+
+/*****************************************
+FOR LANDING PAGE
+*****************************************/
+.box-summary {
+  top:15%;
+  left: 3%;
+  right: 40%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
+
+#floatleft {
+  float: left;
+}
+
+
+/*****************************************
+ BOX - FOR LANDING AND VISUALIZATION PAGES
+ - RIGHT PANEL
+*****************************************/
+.box-visualization {
+  top:15%;
+  right: 3%;
+  left: 63%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
+
+
+/*****************************************
+ BOX - FOR ALL VISUALIZATION PAGES
+ - LEFT PANEL
+*****************************************/
+.box-viz {
+  top:15%;
+  left: 3%;
+  right: 40%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
+
+/*****************************************
+ BOX - FOR COMPARISON PAGE
+*****************************************/
+.box-cmp {
+  /* position: relative; */
+  top: 10%;
+  right: 5%;
+  left: 5%;
+  width: fit-content;
+  background-color: white;
+  padding: 30px 30px 50px 30px; 
+}
+
+/*****************************************
+ BOX - FOR DATA PAGE
+*****************************************/
+.box-data {
+  /* position: relative; */
+  top: 10%;
+  right: 5%;
+  left: 5%;
+  width: fit-content;
+  background-color: white;
+  padding: 30px 30px 50px 30px; 
+}
+
+
+
+
+
+/**********************************************************************************
+/**********************************************************************************
+MEDIA QUERIES
+/**********************************************************************************
+/**********************************************************************************/
+
+/*****************************************
+ MEDIA QUERY - FOR SCREEN WIDTH 400 - 990PX
+*****************************************/
+@media (max-width: 990px) {
+  .box-summary {
+    top:15%;
+    left: 3%;
+    right: 3%;
+    background-color: white;
+  }
+  
+  .box-visualization {
+    top:62%;
+    right: 3%;
+    left: 3%;
+    background-color: white;
+  }
+
+  .box-viz {
+    top:15%;
+    left: 3%;
+    right: 3%;
+    background-color: white;
+  }
+ 
+  .box-cmp {
+    /* position: fixed; */
+    top: 9%;
+    left: 3%;
+    right: 3%;
+    background-color: white;
+  }
+
+  .box-data {
+    /* position: relative; */
+    top: 9%;
+    right: 3%;
+    left: 3%;
+    width: fit-content;
+    background-color: white;
+  }
+
+  .nav-bg-small{
+    background-color: lightseagreen;
+    margin: 5px, 5px, 5px, 5px;
+    z-index: 10;
+  }
+  
+}
+
+
+
+/*****************************************
+ MEDIA QUERY - FOR SCREEN WIDTH < = 400
+*****************************************/
+@media (max-width: 400px) {
+  .box-summary {
+    top: 13%;
+    left: 1%;
+    right: 1%;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+  
+  .box-visualization {
+    top:80%;
+    right: 1%;
+    left: 1%;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+
+  .box-viz {
+    top:13%;
+    left: 1%;
+    right: 1%;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+
+  .box-cmp {
+    /* position: fixed; */
+    top: 9%;
+    left: 1%;
+    right: 1%;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+ 
+  .box-data {
+    /* position: relative; */
+    top: 9%;
+    right: 1%;
+    left: 1%;
+    width: fit-content;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+
+  .nav-bg-small{
+    background-color: lightseagreen;
+  }
+  
+
+}
